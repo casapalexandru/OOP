@@ -1,16 +1,16 @@
 package com.company;
 
-public class Hospital {
-    protected int id;
-    protected String nameHospital;
-    protected String addressHospital;
-    protected String phoneHospital;
+import java.util.ArrayList;
 
-    public Hospital(int id,String nameHospital,String addressHospital,String phoneHospital){
-        this.id = id;
-        this.nameHospital = nameHospital;
-        this.addressHospital = addressHospital;
-        this.phoneHospital = phoneHospital;
+public class Hospital {
+    protected String name;
+    protected Address address;
+    protected Phone phone;
+
+    protected ArrayList<Department> department = new ArrayList<Department>();
+
+    public void addDepartement(Department s){
+        department.add(s);
     }
 
 }
